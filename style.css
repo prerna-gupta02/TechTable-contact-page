@@ -1,0 +1,282 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    z-index: 100;
+    padding: 0px;
+    box-shadow: 0px 0.125rem 0.625rem rgba(0,0,0,0.5);
+}
+.header .container-fluid{
+    padding: 0 0;
+}
+.header .navbar-nav a.nav-link{
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+}
+.header .navbar-nav a:hover.nav-link,
+.header .navbar-nav a:active.nav-link,
+.header .navbar-nav a:focus.nav-link{
+    color: #fff;
+}
+i{
+    font-family: "FontAwesome";
+}
+.heading i{
+    padding: 2rem 2rem 2rem 4rem;
+    font-weight: 600;
+}
+.heading h3{
+    padding: 4rem 0.6rem 0 0.6rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+}
+.heading img{
+    float: right;
+    margin-top: 2.6rem;
+    margin-right: 5rem;
+    height: 80px;
+    width: 180px;
+}
+.links{
+    clear: both;
+}
+.links a{
+    text-decoration: none;
+}
+.links ul li a p{
+    display: inline;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.links ul li p:hover,
+.links ul li p:active,
+.links ul li p:focus{
+    font-weight: 700;
+    transition: font-weight 0.3s ease-in-out;
+}
+.links ul li .icon{
+    font-style: normal;
+    line-height: 8rem;
+    margin-right: 2rem;
+    padding: 0.8rem 1rem 1rem 1rem;
+    border-radius: 40%;
+    color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.links ul li #icon1{
+    background-color: rgb(82, 248, 82);
+}
+.links ul li #icon2{
+    padding-left: 1.4rem;
+    padding-top: 1rem;
+    padding-right: 1.4rem;
+    background-color: rgb(151, 29, 233);
+}
+.links ul li #icon3{
+    background-color:rgb(44, 167, 204);
+}
+.links ul li #icon4{
+    padding-top: 1rem;
+    margin-left: 1.8rem;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.links ul li #icon5{
+    background-color: red;
+}
+.links ul li #icon6{
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: rgb(51, 203, 214);
+}
+.links ul a{
+    height: 60px;
+    width: 40px;
+}
+.links ul li{
+    padding: 0 4.6rem;
+    margin-top: -20px;
+}
+.links hr{
+    width: 0%;
+    height: 100%;
+    border: 1px solid darkblue;
+    float: left;
+    margin-right: 2rem;
+    margin-top: 0;
+}
+.details h4{
+    color: darkblue;
+}
+@media (max-width: 1250px){
+    .header .navbar-nav a.nav-link{
+        padding: 0.8rem 1.6rem;
+    }
+    .links ul li{
+        padding: 0 3rem;
+    }
+}
+@media (max-width: 1090px){
+    .header .navbar-nav a.nav-link{
+        padding: 0.8rem 1.6rem;
+    }
+    .links ul li{
+        padding: 0 2.1rem;
+    }
+}
+@media (max-width: 999px){
+    .header .navbar-nav a.nav-link{
+        padding: 0.8rem 1rem;
+    }
+    .links ul li{
+        padding: 0 1.6rem;
+    }
+    .links ul li .icon{
+        margin-right: 0.6rem;
+        padding: 0.8rem 0.7rem 1rem 0.7rem;
+    }
+    .links ul li #icon1{
+        padding: 0.6rem 0.8rem;
+    }
+    .links ul li #icon2{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    .links ul li #icon4{
+        padding-top: 1rem;
+    }
+    .links ul li #icon6{
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+}
+@media (max-width: 992px){
+    .menu-toggle{
+        position: relative;
+        display: block;
+    }
+    .menu-toggle span{
+        width: 2rem;
+        height: 0.2rem;
+        display: block;
+        background: #fff;
+        margin: 0.35rem;
+        transition: all 0.3s;
+    }
+    .menu-toggle.active span:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 0.2rem;
+    }
+    .menu-toggle.active span:nth-child(2){
+        display: none;
+    }
+    .menu-toggle.active span:nth-child(3){
+        transform: rotate(-45deg);
+        position: relative;
+        top: -0.3rem;
+    }
+    #collapsibleNavbar ul{
+        text-align: center;
+    }
+    .links ul li{
+        padding: 0 3rem;
+    }
+    .links hr{
+        width: 100%;
+        height: 0%;
+        border: 1px solid darkblue;
+        float: none;
+        margin-right: 2rem;
+    }
+    .details{
+        text-align: center;
+    }
+}
+@media (max-width: 823px){
+    .links ul li{
+        padding: 0 3.6rem;
+        margin-top: -20px;
+    }
+    .links ul li #icon3{
+        margin-left: -0.4rem;
+    }
+    .links ul li #icon4{
+        margin-left: 2rem;
+    }
+    .links ul li #icon5{
+        margin-left: -0.11rem;
+    }
+    .links ul li #icon6{
+        margin-left: 0.7rem;
+    }
+}
+@media (max-width: 768px){
+    .heading i{
+        font-size: 2.6rem;
+        padding: 2rem 0.8rem 2rem 2rem;
+    }
+    .heading h3{
+        font-size: 1.4rem;
+        padding:3rem 0.3rem 0 0;
+    }
+    .heading img{
+        margin-top: 1.8rem;
+        margin-right: 3rem;
+        height: 70px;
+        width: 160px;
+    }
+    .links ul li #icon1{
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .links ul li #icon2{
+        padding-left: 1.15rem;
+        padding-top: 0.85rem;
+        padding-right: 1.15rem;
+    }
+    .links ul li #icon3{
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .links ul li #icon4{
+        padding-top: 0.8rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        margin-left: 1.8rem;
+    }
+    .links ul li #icon5{
+        margin-left: -0.2rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .links ul li #icon6{
+        padding-top: 0.8rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+    .links ul li{
+        padding: 0 0.6rem;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 514px){
+    .links ul li .icon{
+        margin-right: 2.4rem;
+        margin-left: 1rem;
+        padding: 0.8rem 1rem 1rem 0.8rem;
+    }
+    .links ul li #icon2{
+        margin-left: 0;
+    }
+    .links ul li #icon4{
+        margin-left: 0;
+    }
+    .links ul li #icon5{
+        margin-left: 0.8rem;
+    }
+}
