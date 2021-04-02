@@ -23,9 +23,23 @@ body{
 i{
     font-family: "FontAwesome";
 }
-.heading i{
-    padding: 2rem 2rem 2rem 4rem;
-    font-weight: 600;
+.heading span{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    margin: 4.5rem -0.2rem 2rem 0rem;
+    transform: rotate(-45deg);
+    animation: animate 2s infinite;
+}
+.heading span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.heading span:nth-child(3){
+    margin-right: 2rem;
+    animation-delay: -0.4s;
 }
 .heading h3{
     padding: 4rem 0.6rem 0 0.6rem;
@@ -110,6 +124,19 @@ i{
 }
 .details h4{
     color: darkblue;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(-45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(-45deg) translate(20px, 20px);
+    }
 }
 @media (max-width: 1250px){
     .header .navbar-nav a.nav-link{
@@ -216,9 +243,8 @@ i{
     }
 }
 @media (max-width: 768px){
-    .heading i{
-        font-size: 2.6rem;
-        padding: 2rem 0.8rem 2rem 2rem;
+    .heading span{
+        margin: 3.2rem 0 2rem 0;
     }
     .heading h3{
         font-size: 1.4rem;
@@ -265,6 +291,21 @@ i{
     }
 }
 @media (max-width: 514px){
+    .heading span{
+        margin: 3rem 0 2rem 0;
+    }
+    .heading span:nth-child(1){
+        margin-left: -1rem;
+    }
+    .heading h3{
+        padding: 3rem 0.2rem 0 0.4rem;
+    }
+    .heading img{
+        margin-top: 2rem;
+        margin-right: 2.6rem;
+        height: 60px;
+        width: 150px;
+    }
     .links ul li .icon{
         margin-right: 2.4rem;
         margin-left: 1rem;
