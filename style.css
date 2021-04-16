@@ -41,6 +41,19 @@ i{
     margin-right: 2rem;
     animation-delay: -0.4s;
 }
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(-45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(-45deg) translate(20px, 20px);
+    }
+}
 .heading h3{
     padding: 4rem 0.6rem 0 0.6rem;
     font-family: 'Dancing Script', cursive;
@@ -62,14 +75,14 @@ i{
 .links ul li a p{
     display: inline;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 .links ul li p:hover,
 .links ul li p:active,
 .links ul li p:focus{
-    font-weight: 700;
-    transition: font-weight 0.3s ease-in-out;
+    color: rgba(48, 46, 46, 0.8);
+    transition: 0.3s ease-in-out;
 }
 .links ul li .icon{
     font-style: normal;
@@ -124,19 +137,6 @@ i{
 }
 .details h4{
     color: darkblue;
-}
-@keyframes animate{
-    0%{
-        opacity: 0;
-        transform: rotate(-45deg) translate(-20px, -20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(-45deg) translate(20px, 20px);
-    }
 }
 @media (max-width: 1250px){
     .header .navbar-nav a.nav-link{
